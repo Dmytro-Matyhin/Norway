@@ -1,0 +1,201 @@
+.section {
+  padding-bottom: 45px;
+}
+@media (min-width: 640px) {
+  .section {
+    padding-bottom: 90px;
+  }
+}
+
+  /* hero */
+
+.section-hero .section-content {
+  color: #ffffff;
+  text-align: center;
+  max-width: 791px;
+}
+.section-hero .section-image {
+  background: url(../../images/hero-bg.jpg) no-repeat center/cover;
+  min-height: 400px;
+}
+@media (min-width: 480px) {
+  .section-hero .section-image {
+    min-height: 450px;
+  }
+}
+@media (min-width: 768px) {
+  .section-hero .section-image {
+    min-height: 550px;
+  }
+}
+@media (min-width: 960px) {
+  .section-hero .section-image {
+    min-height: 650px;
+  }
+}
+.section-hero .section-title {
+  color: inherit;
+  font-size: 45px;
+  font-weight: bold;
+}
+@media (min-width: 640px) {
+  .section-hero .section-title {
+    font-size: 55px;
+    margin-bottom: 25px;
+  } 
+}
+@media (min-width: 768px) {
+  .section-hero .section-title {
+    font-size: 65px;
+  } 
+}
+@media (min-width: 960px) {
+  .section-hero .section-title {
+    font-size: 90px;
+    line-height: 110px;
+    min-width: 791px;
+  }
+}
+.section-hero .section-description {
+  margin: 0;
+  padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .section-hero .section-description {
+    padding-bottom: 50px;
+  }
+}
+
+  /* search */
+
+.section-search {
+  padding-bottom: 0;
+}
+.section-search .section-title,
+.section-popular .section-title,
+.section-who .section-title,
+.section-daily .section-title {
+  font-weight: 900;
+  font-size: 40px;
+}
+.section-search .section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-search-image {
+  min-height: 400px;
+  margin-top: 37px;
+  background: no-repeat center/cover;
+}
+
+  /* popular */
+
+.section-popular .section-content {
+  display: flex;
+  flex-direction: column;
+}
+.section-popular .section-title,
+.section-popular .button-primary {
+  align-self: center;
+}
+.section-popular {
+  padding-top: 45px;
+  background-color: #F2F7FF;
+}
+@media (min-width: 640px) {
+  .section-popular {
+    padding-top: 90px;
+  }
+  .section-search .section-title,
+  .section-popular .section-title,
+  .section-daily .section-title,
+  .section-who .section-title {
+    font-size: 52px;
+    margin-bottom: 50px;
+  }
+}
+  /* slider */
+
+@media (min-width: 768px) {
+  .slider-arrow {
+    border: 1px solid #ffffff;
+    color: #373F55;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+  /* daily */
+
+.section-daily .sedction-image {
+  background: url(../../images/mountains2.png) no-repeat top/cover;
+}
+.section-daily {
+  padding-top: 45px;
+}
+@media(min-width: 640px) {
+  .section-daily {
+    padding-top: 90px;
+  }
+  .section-daily .section-image {
+    min-height: 988px;
+  }
+}
+.section-daily .section-body {
+  padding-top: 36px;
+}
+.section-daily .section-title {
+  padding-bottom: 50px;
+  margin: 0;
+  text-align: center;
+}
+.section-daily .section-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+  /* who */
+
+.section-who .section-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1116px;
+}
+.section-who .section-image img {
+  height: 170px;
+}
+.section-block-images {
+  display: none;
+}
+@media (min-width: 640px) {
+  .section-block-images {
+    display: block;
+  }
+}
+
+.angle-top-left img {
+  border-top-left-radius: 34px;
+}
+.angle-top-right img {
+  border-top-right-radius: 34px;
+}
+.angle-bottom-left img {
+  border-bottom-left-radius: 34px;
+}
+.angle-bottom-right img {
+  border-bottom-right-radius: 34px;
+}
+.section-description-margin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+  /* reviews */
+
+  .section-reviews {
+    background-color: #F2F7FF;
+  }

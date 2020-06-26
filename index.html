@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>The North</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header-top">
+            <a href="tel:+47-124-82-232" class="header-call">
+              <span class="icon-phone header-phone"></span> +47-124-82-232 </a>
+              <a href="#" class="logo">The North.</a>
+              <ul class="header-user">
+                <li class="header-avatar-item">
+                  <a href="#" class="header-search">
+                    <span class="icon-magnifier"></span>
+                  </a>
+                </li>
+                <li class="header-avatar-item">
+                  <img src="images/avatar.png" alt="avatar"/>
+                </li>
+                <li class="header-avatar-item">Elena</li>
+              </ul>
+              <button class="uk-button uk-button-default button-toggle" type="button" uk-toggle="target: #offcanvas-flip">
+                <span></span>
+              </button>
+              <div id="offcanvas-flip" uk-offcanvas="flip: true; overlay: true">
+                <div class="uk-offcanvas-bar">
+                <button class="uk-offcanvas-close" type="button" uk-close></button>
+                  <ul class="navbar-mobile">
+                    <li class="navbar-mobile-item">
+                      <a href="#">Home</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                      <a href="#">Search for tours</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                      <a href="#">Popular tours</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                      <a href="#">Daily tours</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                      <a href="#">About us</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                      <a href="#">Reviews</a>
+                    </li>
+                    <li class="navbar-mobile-item">
+                      <a href="#">Contacts</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+          </div>
+          <div class="header-bottom">
+            <nav class="nav">
+              <ul class="nav-list">
+                <li class="nav-item">
+                  <a href="#" class="nav-item-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-item-link">Search for tours</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-item-link">Popular tours</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-item-link">Daily tours</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-item-link">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-item-link">Reviews</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-item-link">Contacts</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <section class="section section-hero">
+        <div class="uk-background-contain uk-background-muted uk-height-medium uk-panel uk-flex uk-flex-center uk-flex-middle section-image">
+          <div class="container">
+            <div class="section-content">
+              <h1 class="section-title">Norway Excursions</h1>
+              <p class="section-description">
+                We have years of experience. Whether you are traveling to Norway by plane, bus or cruise ship, 
+                our excursions are available and accessible for everyone.
+              </p>
+              <button class="uk-button uk-button-default button-primary button-full button-size-normal">View all tours</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-search">
+        <div class="container">
+          <div class="section-content">
+            <h2 class="section-title">Search for tours</h2>
+              <form class="form">
+               <div class="row">
+                <div class="column width-1-1 width-1-2-sm width-1-4-xl">
+                  <div class="form-control">
+                    <label for="category" class="label">Category</label>
+                    <input type="text" list="category-tours" id="category" class="input">
+                    <datalist id="category-tours">
+                      <option value="All"></option>
+                      <option value="Fjord Cruises and Safaris"></option>
+                      <option value="Kayaking"></option>
+                      <option value="Hiking in Norway"></option>
+                      <option value="Sightseeing & Guided Tours"></option>
+                      <option value="Museums & Attractions"></option>
+                    </datalist>
+                  </div>
+                </div>
+                <div class="column width-1-1 width-1-2-sm width-1-4-xl">
+                  <div class="form-control">
+                    <label for="tag" class="label">Tag</label>
+                    <input type="text" list="tag-tours" id="tag" class="input">
+                    <datalist id="tag-tours">
+                      <option value="Nordfjord"></option>
+                      <option value="Hardtangerfjord"></option>
+                      <option value="Nærøyfjord"></option>
+                      <option value="Sognefjord"></option>
+                      <option value="Geirangerfjord"></option>
+                    </datalist>
+                  </div>
+                </div>
+                <div class="column width-1-1 width-1-2-sm width-1-4-xl">
+                  <div class="form-control">
+                    <label for="duration" class="label">Duration</label>
+                    <input type="text" list="duration-tours" id="duration" class="input">
+                    <datalist id="duration-tours">
+                      <option value="1 Day"></option>
+                      <option value="3 Days"></option>
+                      <option value="5 Days"></option>
+                      <option value="7 days"></option>
+                      <option value="10 Days"></option>
+                    </datalist>
+                  </div>
+                </div>
+                <div class="column width-1-1 width-1-2-sm width-1-4-xl">
+                  <div class="form-control">
+                    <label for="price" class="label">Price</label>
+                    <input type="text" list="price-tours" id="price" class="input">
+                    <datalist id="price-tours">
+                      <option value="Less then 70€"></option>
+                      <option value="From 70€ to 300€"></option>
+                      <option value="From 300€ to 500€"></option>
+                      <option value="From 500€"></option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <button class="uk-button uk-button-default button-primary button-full button-size-small">Find tours</button>
+          </div>
+        </div> 
+        <img data-src="images/mountains.png" alt="Mountains" class="section-search-image" uk-img>
+      </section>
+      <section class="section section-popular">
+        <div class="container">
+          <div class="section-content">
+            <h2 class="section-title">Popular tours</h2>
+            <div uk-slider>
+              <div class="uk-position-relative">
+                <div class="uk-slider-container">
+                  <ul class="uk-slider-items uk-child-width-1-2@s uk-child-width-1-4@m uk-grid">
+                    <li>
+                      <div class="uk-card uk-card-default card">
+                        <div class="uk-card-media-top card-image">
+                          <img src="images/snowmobile-riding.jpg" alt="Snowmobile riding">
+                        </div>
+                        <div class="uk-card-body card-body">
+                          <div class="card-reviews">
+                            <figure class="card-stars">
+                              <img src="images/5stars.svg" alt="stars">
+                            </figure>
+                            <span class="card-number-reviews">125 Reviews</span>
+                          </div>
+                          <h3 class="uk-card-title card-title">Northern Lights and Snowmobile riding</h3>
+                          <p class="card-description">Seeing the northern lights can be hard under the bright lights</p>
+                          <div class="card-duration-price">
+                            <span class="card-duration">Duration - 12 hours</span>
+                            <span class="card-price">95€</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="uk-card uk-card-default card">
+                        <div class="uk-card-media-top card-image">
+                          <img src="images/reindeer-feeding.jpg" alt="Reindeer feeding">
+                        </div>
+                        <div class="uk-card-body card-body">
+                          <div class="card-reviews">
+                            <figure class="card-stars">
+                              <img src="images/5stars.svg" alt="stars">
+                            </figure>
+                            <span class="card-number-reviews">140 Reviews</span>
+                          </div>
+                          <h3 class="uk-card-title card-title">Reindeer Feeding and Lasso Throwing</h3>
+                          <p class="card-description">Immerse yourself in Sami culture and feed a herd of 200</p>
+                          <div class="card-duration-price">
+                            <span class="card-duration">Duration - 3 hours</span>
+                            <span class="card-price">60€</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="uk-card uk-card-default card">
+                        <div class="uk-card-media-top card-image">
+                          <img src="images/oslo.jpg" alt="Oslo">
+                        </div>
+                        <div class="uk-card-body card-body">
+                          <div class="card-reviews">
+                            <figure class="card-stars">
+                              <img src="images/5stars.svg" alt="stars">
+                            </figure>
+                            <span class="card-number-reviews">97 Reviews</span>
+                          </div>
+                          <h3 class="uk-card-title card-title">Self-Guided Norway roundtrip: Oslo</h3>
+                          <p class="card-description">Experience Norway, and see Scandinavian scenery on this</p>
+                          <div class="card-duration-price">
+                            <span class="card-duration">Duration - 10 hours</span>
+                            <span class="card-price">80€</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="uk-card uk-card-default card">
+                        <div class="uk-card-media-top card-image">
+                          <img src="images/drive-husky.jpg" alt="Husky">
+                        </div>
+                        <div class="uk-card-body card-body">
+                          <div class="card-reviews">
+                            <figure class="card-stars">
+                              <img src="images/5stars.svg" alt="stars">
+                            </figure>
+                            <span class="card-number-reviews">84 Reviews</span>
+                          </div>
+                          <h3 class="uk-card-title card-title">Fascinating Drive a Husky Sled in Tromso</h3>
+                          <p class="card-description">Seeing the northern lights can be hard under the bright lights</p>
+                          <div class="card-duration-price">
+                            <span class="card-duration">Duration - 3 hours</span>
+                            <span class="card-price">75€</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="uk-card uk-card-default card">
+                        <div class="uk-card-media-top card-image">
+                          <img src="images/reindeer-feeding2.jpg" alt="Reindeer feeding">
+                        </div>
+                        <div class="uk-card-body card-body">
+                          <div class="card-reviews">
+                            <figure class="card-stars">
+                              <img src="images/5stars.svg" alt="stars">
+                            </figure>
+                            <span class="card-number-reviews">160 Reviews</span>
+                          </div>
+                          <h3 class="uk-card-title card-title">Reindeer Feeding and Lasso Throwing</h3>
+                          <p class="card-description">Seeing the northern lights can be hard under the bright lights</p>
+                          <div class="card-duration-price">
+                            <span class="card-duration">Duration - 3 hours</span>
+                            <span class="card-price">55€</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="uk-card uk-card-default card">
+                        <div class="uk-card-media-top card-image">
+                          <img src="images/snowmobile.jpg" alt="Snowmobile">
+                        </div>
+                        <div class="uk-card-body card-body">
+                          <div class="card-reviews">
+                            <figure class="card-stars">
+                              <img src="images/5stars.svg" alt="stars">
+                            </figure>
+                            <span class="card-number-reviews">65 Reviews</span>
+                          </div>
+                          <h3 class="uk-card-title card-title">Lapland Lyngen Alps Snowmobile Safari</h3>
+                          <p class="card-description">Seeing the northern lights can be hard under the bright lights</p>
+                          <div class="card-duration-price">
+                            <span class="card-duration">Duration - 2 hours</span>
+                            <span class="card-price">60€</span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <div class="uk-hidden@s uk-light">
+                    <a class="uk-position-center-left uk-position-small slider-arrow" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right uk-position-small slider-arrow" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                  </div>
+                  <div class="uk-visible@s">
+                    <a class="uk-position-center-left-out uk-position-small slider-arrow" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                    <a class="uk-position-center-right-out uk-position-small slider-arrow" href="#" uk-slidenav-next uk-slider-item="next"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="uk-button uk-button-default button-primary button-full button-margin button-size-large">View all popular tours</button>
+          </div>
+        </div>
+      </section>
+      <section class="section section-daily">
+        <div class="container">
+        <h2 class="section-title">Daily tours</h2>
+        <div uk-grid>
+          <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+            <div class="uk-card uk-card-default card">
+              <div class="uk-card-media-top card-image">
+                <img src="images/reindeer-feeding2.jpg" alt="Reindeer feeding">
+              </div>
+              <div class="uk-card-body card-body">
+                <div class="card-reviews">
+                  <figure class="card-stars">
+                    <img src="images/5stars.svg" alt="stars">
+                  </figure>
+                  <span class="card-number-reviews">160 Reviews</span>
+                </div>
+                <h3 class="uk-card-title card-title">Reindeer Feeding and Lasso Throwing</h3>
+                <div class="card-duration-price">
+                  <span class="card-duration">Duration - 3 hours</span>
+                  <span class="card-price">55€</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+            <div class="uk-card uk-card-default card">
+              <div class="uk-card-media-top card-image">
+                <img src="images/snowmobile.jpg" alt="Snowmobile">
+              </div>
+              <div class="uk-card-body card-body">
+                <div class="card-reviews">
+                  <figure class="card-stars">
+                    <img src="images/4,5stars.svg" alt="stars">
+                  </figure>
+                  <span class="card-number-reviews">65 Reviews</span>
+                </div>
+                <h3 class="uk-card-title card-title">Lapland Lyngen Alps Snowmobile Safari</h3>
+                <div class="card-duration-price">
+                  <span class="card-duration">Duration - 2 hours</span>
+                  <span class="card-price">60€</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+            <div class="uk-card uk-card-default card">
+              <div class="uk-card-media-top card-image">
+                <img src="images/breathtaking-fjord.jpg" alt="Breathtaking fjord">
+              </div>
+              <div class="uk-card-body card-body">
+                <div class="card-reviews">
+                  <figure class="card-stars">
+                    <img src="images/5stars.svg" alt="stars">
+                  </figure>
+                  <span class="card-number-reviews">145 Reviews</span>
+                </div>
+                <h3 class="uk-card-title card-title">Breathtaking fjord cruise</h3>
+                <div class="card-duration-price">
+                  <span class="card-duration">Duration - 4 hours</span>
+                  <span class="card-price">70€</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+            <div class="uk-card uk-card-default card">
+              <div class="uk-card-media-top card-image">
+                <img src="images/arctic-sea.jpg" alt="Arctic Sea">
+              </div>
+              <div class="uk-card-body card-body">
+                <div class="card-reviews">
+                  <figure class="card-stars">
+                    <img src="images/5stars.svg" alt="stars">
+                  </figure>
+                  <span class="card-number-reviews">75 Reviews</span>
+                </div>
+                <h3 class="uk-card-title card-title">Arctic Sea and Lyngen Alps</h3>
+                <div class="card-duration-price">
+                  <span class="card-duration">Duration - 5 hours</span>
+                  <span class="card-price">90€</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <div class="section-body">
+          <div data-src="images/mountains2.png" alt="mountains" uk-img class="section-image">
+            <div class="container">
+              <div class="section-content">
+                <div uk-grid>
+                  <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+                    <div class="uk-card uk-card-default card">
+                      <div class="uk-card-media-top card-image">
+                        <img src="images/aurora-hunt.jpg" alt="Aurora hunt">
+                      </div>
+                      <div class="uk-card-body card-body">
+                        <div class="card-reviews">
+                          <figure class="card-stars">
+                            <img src="images/5stars.svg" alt="stars">
+                          </figure>
+                          <span class="card-number-reviews">75 Reviews</span>
+                        </div>
+                        <h3 class="uk-card-title card-title">Aurora Hunt Northern Lights Tour</h3>
+                        <div class="card-duration-price">
+                          <span class="card-duration">Duration - 6 hours</span>
+                          <span class="card-price">95€</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+                    <div class="uk-card uk-card-default card">
+                      <div class="uk-card-media-top card-image">
+                        <img src="images/oslo-fjord.jpg" alt="Oslo fjord">
+                      </div>
+                      <div class="uk-card-body card-body">
+                        <div class="card-reviews">
+                          <figure class="card-stars">
+                            <img src="images/5stars.svg" alt="stars">
+                          </figure>
+                          <span class="card-number-reviews">102 Reviews</span>
+                        </div>
+                        <h3 class="uk-card-title card-title">2-Hour Oslo Fjord Sightseeing Cruise</h3>
+                        <div class="card-duration-price">
+                          <span class="card-duration">Duration - 2 hours</span>
+                          <span class="card-price">45€</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+                    <div class="uk-card uk-card-default card">
+                      <div class="uk-card-media-top card-image">
+                        <img src="images/evening-husky.jpg" alt="Evening husky">
+                      </div>
+                      <div class="uk-card-body card-body">
+                        <div class="card-reviews">
+                          <figure class="card-stars">
+                            <img src="images/4stars.svg" alt="stars">
+                          </figure>
+                          <span class="card-number-reviews">56 Reviews</span>
+                        </div>
+                        <h3 class="uk-card-title card-title">Evening Husky Sled Ride</h3>
+                        <div class="card-duration-price">
+                          <span class="card-duration">Duration - 2 hours</span>
+                          <span class="card-price">50€</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="uk-width-1-1 uk-width-1-2@s uk-width-1-4@m">
+                    <div class="uk-card uk-card-default card">
+                      <div class="uk-card-media-top card-image">
+                        <img src="images/northen.jpg" alt="Northen">
+                      </div>
+                      <div class="uk-card-body card-body">
+                        <div class="card-reviews">
+                          <figure class="card-stars">
+                            <img src="images/5stars.svg" alt="stars">
+                          </figure>
+                          <span class="card-number-reviews">125 Reviews</span>
+                        </div>
+                        <h3 class="uk-card-title card-title">Small Group Northern Lights</h3>
+                        <div class="card-duration-price">
+                          <span class="card-duration">Duration - 4 hours</span>
+                          <span class="card-price">80€</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="uk-button uk-button-default button-primary button-full button-margin-daily button-size-large">View all daily tours</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-who">
+        <div class="container">
+          <div class="section-content">
+            <h2 class="section-title">Who we are?</h2>
+            <div uk-grid>
+              <div class="uk-width-1-1 uk-width-1-2@m">
+                <div class="section-block-images">
+                  <div uk-grid>
+                    <div class="uk-width-1-1 uk-width-1-2@s column-padding">
+                      <figure class="section-image angle-top-left">
+                        <img src="images/who4.jpg" alt="Office woman"/>
+                      </figure>
+                    </div>
+                    <div class="uk-width-1-1 uk-width-1-2@s column-padding">
+                      <figure class="section-image angle-top-right">
+                        <img src="images/who.jpg" alt="People talk"/>
+                      </figure>
+                    </div>
+                    <div class="uk-width-1-1 uk-width-1-2@s column-padding">
+                      <figure class="section-image angle-bottom-left">
+                        <img src="images/who2.jpg" alt="People talk"/>
+                      </figure>
+                    </div>
+                    <div class="uk-width-1-1 uk-width-1-2@s column-padding">
+                      <figure class="section-image angle-bottom-right">
+                        <img src="images/who3.jpg" alt="Office woman"/>
+                      </figure>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="uk-width-1-1 uk-width-1-2@m section-description-margin">
+                <p>
+                  Our company has years of experience in the world of tourism, providing excursions. 
+                  We take care of our clients and all our staff is the most qualified professionals. 
+                  We try to make our clients happy and make each excursion unforgettable for them. 
+                </p>
+                <p>
+                  We have the newest equipment everywhere you need it. We like animals and nature, 
+                  that’s why our pets the happiest and the most beautiful.
+                </p>
+                <p>
+                  Let’s travel with us. We will make your life brighter.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.4/dist/js/uikit-icons.min.js"></script>
+  </body>
+</html>

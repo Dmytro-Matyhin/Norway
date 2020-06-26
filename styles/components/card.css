@@ -1,0 +1,88 @@
+.card {
+  background: #FFFFFF;
+  box-shadow: 4px 4px 46px rgba(10, 34, 67, 0.07);
+  border-radius: 34px;
+  min-height: 460px;
+  transition: all 0.5s ease-out;
+}
+.card:hover {
+  transform: scale(1.03);
+}
+.card-image  img {
+  border-top-left-radius: 34px;
+  border-top-right-radius: 34px;
+  height: 229px;
+}
+.card-stars {
+  max-height: 24px;
+  display: inline-block;
+}
+.card-body {
+  padding: 28px 17px;
+}
+.card-reviews {
+  display: flex;
+  align-items: center;
+}
+.card-number-reviews {
+  font-size: 13px;
+  line-height: 15px;
+  color: #888EA0;
+  padding-left: 10px;
+}
+.card-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  color: #373F55;
+  margin: 0;
+  padding-top: 15px;
+}
+.card-description {
+  font-size: 16px;
+  line-height: 20px;
+  color: #464649;
+  margin: 0;
+  padding-top: 8px;
+}
+.card-duration-price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card-duration {
+  font-size: 13px;
+  line-height: 15px;
+  color: #888EA0;
+  margin: 0;
+  padding-top: 27px;
+}
+.card-price {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  color: #373F55;
+  margin: 0;
+  padding-top: 13px;
+}
+.section-daily .card-image img {
+  height: 173px;
+  object-fit: cover;
+}
+.section-daily .card-body {
+  padding: 21px 17px 31px;
+}
+.section-daily .card {
+  min-height: 343px;
+}
+.section-daily .card-title {
+  padding-top: 13px;
+}
+.section-daily .card-price {
+  padding-top: 8px;
+}
+@media (min-width: 960px) and (max-width: 1100px) {
+  .section-daily .card-title {
+    font-size: 18px;
+  }
+}

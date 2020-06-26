@@ -1,0 +1,36 @@
+.form {
+  padding-bottom: 32px;
+}
+.form-control {
+  margin-bottom: 18px;
+}
+.label {
+  font-size: 14px;
+  line-height: 16px;
+  color: #373F55;
+}
+
+.input {
+  width: 100%;
+  border: 1px solid #F2F7FF;
+  padding: 10px;
+  background-color: #F2F7FF;
+  color: #373F55;
+  border-radius: 133px;
+  font-size: inherit;
+  height: 52px;
+  margin-top: 12px;
+}
+.input:focus,
+.select:focus {
+  outline: none;
+  background-color: #F2F7FF;
+  color: #373F55;;
+  border-color: #F2F7FF;;
+}
+
+.input:disabled {
+  background-color: #F2F7FF;
+  color: #373F55;
+  border-color: #F2F7FF;
+}
