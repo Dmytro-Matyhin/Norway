@@ -7,3 +7,11 @@
 .row > .column {
   padding: 0 10px;
 }
+
+.row-large {
+  align-items: flex-end;
+  margin: -15px;
+}
+.row-large > .column {
+  padding: 15px;
+}

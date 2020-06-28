@@ -9,11 +9,14 @@
   line-height: 16px;
   color: #373F55;
 }
+.label-footer {
+  color: #c4c4c4;
+}
 
 .input {
   width: 100%;
   border: 1px solid #F2F7FF;
-  padding: 10px;
+  padding: 10px 24px;
   background-color: #F2F7FF;
   color: #373F55;
   border-radius: 133px;

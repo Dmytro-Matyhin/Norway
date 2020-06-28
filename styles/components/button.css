@@ -1,3 +1,6 @@
+.button-full {
+  width: 100%;
+}
 .button-primary {
   background-color: #FF0032;
   box-shadow: 4px 4px 46px rgba(10, 34, 67, 0.07);
@@ -7,6 +10,8 @@
   font-size: inherit;
   color: #ffffff;
   line-height: 20px;
+  text-align: center;
+  padding: 16px 0;
 }
 .button-primary:hover {
   background-color: #b40326;
