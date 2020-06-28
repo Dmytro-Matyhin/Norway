@@ -3,15 +3,9 @@
   -webkit-box-shadow: 4px 4px 46px rgba(10, 34, 67, 0.07);
           box-shadow: 4px 4px 46px rgba(10, 34, 67, 0.07);
   border-radius: 34px;
-  min-height: 460px;
-  -webkit-transition: all 0.5s ease-out;
-  -o-transition: all 0.5s ease-out;
-  transition: all 0.5s ease-out;
-}
-.card:hover {
-  -webkit-transform: scale(1.03);
-      -ms-transform: scale(1.03);
-          transform: scale(1.03);
+  display: flex;
+  height: 100%;
+  flex-direction: column;
 }
 .card-image  img {
   border-top-left-radius: 34px;
@@ -23,7 +17,13 @@
   display: inline-block;
 }
 .card-body {
-  padding: 28px 17px;
+  padding: 28px 17px 0;
+  flex-grow: 1;
+}
+.card-footer {
+  padding: 13px 19px 27px;
+  display: flex;
+  justify-content: space-between;
 }
 .card-reviews {
   display: -webkit-box;
@@ -89,13 +89,13 @@
      object-fit: cover;
 }
 .section-daily .card-body {
-  padding: 21px 17px 31px;
+  padding: 21px 17px 28px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
 }
 .section-daily .card-footer {
-  padding-top: 8px;
+  padding: 8px 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -104,7 +104,7 @@
           justify-content: space-between;
 }
 .section-daily .card {
-  min-height: 343px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,6 +114,14 @@
           flex-direction: column;
   height: 100%;
   overflow: hidden;
+  -webkit-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+.section-daily .card:hover {
+  -webkit-transform: scale(1.03);
+      -ms-transform: scale(1.03);
+          transform: scale(1.03);
 }
 .section-daily .card-title {
   padding-top: 13px;
@@ -139,6 +147,10 @@
   flex-direction: column;
   overflow: hidden;
   height: 100%;
+  transition: none;
+}
+.section-reviews .card:hover {
+  transform: none;
 }
 .section-reviews .card-review-content {
   flex-grow: 1;
@@ -150,6 +162,11 @@
   font-size: 14px;
   line-height: 19px;
   color: #000000;
+}
+.section-reviews .card-footer {
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 .card-top {
   display: -webkit-box;
