@@ -3,6 +3,7 @@
 }
 .form-control {
   margin-bottom: 18px;
+  position: relative;
 }
 .label {
   font-size: 14px;
@@ -36,4 +37,19 @@
   background-color: #F2F7FF;
   color: #373F55;
   border-color: #F2F7FF;
+}
+
+.form-error-message {
+  color: #ffffff;
+  padding: 10px;
+  display: none;
+  position: absolute;
+}
+.input:invalid:not(:placeholder-shown) {
+  display: block;
+  border-color: red;
+}
+.input:invalid + .form-error-message {
+  display: block;
+  border-color: red;
 }

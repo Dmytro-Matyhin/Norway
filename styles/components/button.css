@@ -3,7 +3,8 @@
 }
 .button-primary {
   background-color: #FF0032;
-  box-shadow: 4px 4px 46px rgba(10, 34, 67, 0.07);
+  -webkit-box-shadow: 4px 4px 46px rgba(10, 34, 67, 0.07);
+          box-shadow: 4px 4px 46px rgba(10, 34, 67, 0.07);
   border-radius: 46px;
   border-color: #FF0032;
   text-transform: none;
@@ -58,15 +59,21 @@
 .button-toggle span::before {
   content: "";
   display: block;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
 .button-toggle span::after {
-  transform: translateY(5px);
+  -webkit-transform: translateY(5px);
+      -ms-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .button-toggle span::before {
-  transform: translateY(-5px);
+  -webkit-transform: translateY(-5px);
+      -ms-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .button-toggle.is-active span {
@@ -74,11 +81,15 @@
 }
 
 .button-toggle.is-active span::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 .button-toggle.is-active span::before {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 @media (min-width: 768px) {
   .button-toggle {
