@@ -14,7 +14,8 @@
   color: #c4c4c4;
 }
 
-.input {
+.input,
+.select {
   width: 100%;
   border: 1px solid #F2F7FF;
   padding: 10px 24px;
@@ -30,12 +31,6 @@
   outline: none;
   background-color: #F2F7FF;
   color: #373F55;;
-  border-color: #F2F7FF;;
-}
-
-.input:disabled {
-  background-color: #F2F7FF;
-  color: #373F55;
   border-color: #F2F7FF;
 }
 

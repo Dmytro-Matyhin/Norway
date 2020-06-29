@@ -3,9 +3,14 @@
   -webkit-box-shadow: 4px 4px 46px rgba(10, 34, 67, 0.07);
           box-shadow: 4px 4px 46px rgba(10, 34, 67, 0.07);
   border-radius: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   height: 100%;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .card-image  img {
   border-top-left-radius: 34px;
@@ -18,12 +23,18 @@
 }
 .card-body {
   padding: 28px 17px 0;
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .card-footer {
   padding: 13px 19px 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .card-reviews {
   display: -webkit-box;
@@ -90,6 +101,15 @@
 }
 .section-daily .card-body {
   padding: 21px 17px 28px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.section-daily .card-content {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -143,17 +163,28 @@
 .section-reviews .card {
   padding: 22px;
   min-height: 188px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   overflow: hidden;
   height: 100%;
+  -webkit-transition: none;
+  -o-transition: none;
   transition: none;
 }
 .section-reviews .card:hover {
-  transform: none;
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 .section-reviews .card-review-content {
-  flex-grow: 1;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 .section-reviews .card-body {
   padding: 18px 0 24px;
@@ -165,8 +196,12 @@
 }
 .section-reviews .card-footer {
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .card-top {
   display: -webkit-box;
